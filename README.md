@@ -13,7 +13,8 @@
 ## Day 1 Code:
 
 * RBNode:
-  public size, boolean isRed, left and right RBNodes, add RED/BLACK to toString
+  public static final boolean RED=true; public static final boolean black=false; public size boolean color
+  left and right RB nodes, add RED/BLACK toString
 
 * public void rotateLeft
 
