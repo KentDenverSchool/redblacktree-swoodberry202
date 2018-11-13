@@ -5,7 +5,7 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
     private boolean RED = true;
     private boolean BLACK = false;
 
-    private RBNode root;     // root of the BST
+    public RBNode root;     // root of the BST
   
     /**
      * Initializes an empty symbol table.
@@ -70,6 +70,11 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
         return get(root, key);
     }
 
+    public String toString(){
+        String q= root.toString().substring(root.toString().indexOf('{')+1,root.toString().indexOf("}"));
+
+        return q;
+    }
     // value associated with the given key in subtree rooted at x; null if no such key
     private Value get(RBNode x, Key key) {
         while (x != null) {
@@ -201,8 +206,7 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
     // delete the key-value pair with the given key rooted at h
     private RBNode delete(RBNode h, Key key) {
         // assert get(h, key) != null;
-       
-        /**delete**/
+
         
         return balance(h);
     }

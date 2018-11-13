@@ -20,5 +20,6 @@ public class driver {
         System.out.println(rbBST.isRBT());
         rbBST.rotateRight(one);
         System.out.println(rbBST.gParent(left));
+        System.out.println(rbBST.toString());
     }
 }
